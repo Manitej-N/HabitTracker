@@ -1,5 +1,5 @@
 # A Personal project to track my Habits and maintain a Routine.
-
+from models import *
 #Main Menu
 def main_menu():
     """Display the main menu"""
@@ -16,7 +16,11 @@ def loop():
         key = command.split()
         match key[0]:
             case "add_habit":
+
                 print("Added Habit")
+            case "lst":
+                print("Listed Habits")
+                print()
         line = input('>>> ')  # displays a command-line prompter for users to enter command script
         words = line.split(' ')  # separates the command from the script arguments
         command, args = words[0], words[1:]  # command is one of the interpreter script commands outlined in the help above
