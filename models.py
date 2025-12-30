@@ -34,4 +34,11 @@ class Habit:
     def list_habits(self):
         """List all habits"""
         print("Listed Habits")
+        print(f"{self.habit} on {self.date}")
+
+
 print(Habit.__doc__)
+
+habit1 = Habit('read', '17/5/25')
+habit2 = Habit('write', '17/5/25')
+habit1.list_habits()
