@@ -29,12 +29,16 @@ class Habit:
 
     def add_habits(self):
         """Add the habits to the list"""
-
+        pass
 
     def list_habits(self):
         """List all habits"""
         print("Listed Habits")
         print(f"{self.habit} on {self.date}")
+
+    def streak(self):
+        """Used to track the streaks of a habit"""
+        pass
 
 
 print(Habit.__doc__)
