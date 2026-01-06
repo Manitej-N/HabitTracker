@@ -17,7 +17,7 @@ class Habit:
         # __gen_mailbox returns mailbox as a list containing received emails as Mail objects
         @classmethod
         def __gen_agent(cls, habit_data):  # DO NOT CHANGE
-            """ generates mailbox data structure
+            """ generates habits data structure
                 :ivar: String
                 :rtype: list  """
             agent = []
