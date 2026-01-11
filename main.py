@@ -18,13 +18,10 @@ def loop():
 
             case "add_habit":
                 print("Added Habit")
-
                 habit_name = input("Enter habit name: ")
                 habit_date = input("Enter date (YYYY-MM-DD): ")
-
                 new = Habit(habit_name, habit_date)
                 _agent.append(new)
-
                 return new
 
             case "lst":
@@ -32,7 +29,7 @@ def loop():
                 for habit in _agent:
                     print(habit)
 
-        line = input('>>> ')  # displays a command-line prompter for users to enter command script
+        line = input('>> ')  # displays a command-line prompter for users to enter command script
         words = line.split(' ')  # separates the command from the script arguments
         command, args = words[0], words[1:]  # command is one of the interpreter script commands outlined in the help above
 
