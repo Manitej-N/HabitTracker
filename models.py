@@ -8,17 +8,14 @@ class Habit:
         self.date = date
 
     class HabitAgent:
-        """<This is the documentation for HabitAgent. Complete the docstring for this class."""
+        """This is the documentation for HabitAgent.Should Complete the docstring for this class."""
 
         def __init__(self):  # DO NOT CHANGE
-            _agent = []
+            self.agent = []
 
 
     def add_habits(self):
         """Add the habits to the list"""
-
-
-
 
 
     def list_habits(self):
