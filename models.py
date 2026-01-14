@@ -24,7 +24,7 @@ class Habit:
         print(f"{self.habit} on {self.date}")
 
     def streak(self):
-        """Used to track the streaks of a habit"""
+        "Used to track the streaks of a habit"
         pass
 
 
