@@ -4,11 +4,11 @@ from models import *
 def main_menu():
     """Display the main menu"""
     print("Habit Tracker")
-    print("add_habit | lst | quit")
 
 def loop():
     """Main loop"""
     main_menu()
+    print("add_habit | lst | quit")
     line = input(">>>")
     words= line.split(' ')
     command, args = words[0],words[1:]
@@ -28,7 +28,7 @@ def loop():
                 print("Listed Habits")
                 for habit in _agent:
                     print(f"{habit.habit} on {habit.date}")
-
+        print("add_habit | lst | quit")
         line = input('>> ')  # displays a command-line prompter for users to enter command script
         words = line.split(' ')  # separates the command from the script arguments
         command, args = words[0], words[1:]  # command is one of the interpreter script commands outlined in the help above
