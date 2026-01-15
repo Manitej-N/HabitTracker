@@ -6,6 +6,7 @@ class Habit:
         """Initialize the Habit class"""
         self.habit = habit
         self.date = date
+        self.list = self.agent = []
 
     class HabitAgent:
         """This is the documentation for HabitAgent.Should Complete the docstring for this class."""
@@ -20,8 +21,7 @@ class Habit:
 
     def list_habits(self):
         """List all habits"""
-        print("Listed Habits")
-        print(f"{self.habit} on {self.date}")
+
 
     def streak(self):
         "Used to track the streaks of a habit"

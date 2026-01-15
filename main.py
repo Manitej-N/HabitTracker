@@ -1,5 +1,5 @@
 # A Personal project to track my Habits and maintain a Routine.
-from models import Habit
+from models import *
 #Main Menu
 def main_menu():
     """Display the main menu"""
@@ -22,12 +22,12 @@ def loop():
                 habit_date = input("Enter date (YYYY-MM-DD): ")
                 new = Habit(habit_name, habit_date)
                 _agent.append(new)
-                return new
+
 
             case "lst":
                 print("Listed Habits")
                 for habit in _agent:
-                    print(habit)
+                    print(f"{habit.habit} on {habit.date}")
 
         line = input('>> ')  # displays a command-line prompter for users to enter command script
         words = line.split(' ')  # separates the command from the script arguments
