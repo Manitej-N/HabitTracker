@@ -19,7 +19,7 @@ def loop():
             case "add_habit":
                 print("Added Habit")
                 habit_name = input("Enter habit name: ")
-                habit_date = input("Enter date (YYYY-MM-DD): ")
+                habit_date = input("Enter date (DD-MM-YYYY): ")
                 new = Habit(habit_name, habit_date)
                 _agent.append(new)
 
