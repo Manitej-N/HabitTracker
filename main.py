@@ -8,15 +8,18 @@ def main_menu():
 def loop():
     """Main loop"""
     main_menu()
-    print("add_habit | lst | show_streaks | quit")
+    print("1) add_habit "
+          "2) lst  "
+          "3) show_streaks  "
+          "4) quit")
     line = input(">>>")
     words= line.split(' ')
     command, args = words[0],words[1:]
-    while command != "quit":
+    while command != "4":
         key = command.split()
         match key[0]:
 
-            case "add_habit":
+            case "1":
                 print("Added Habit")
                 habit_name = input("Enter habit name: ")
                 habit_date = input("Enter date (DD-MM-YYYY): ")
@@ -24,20 +27,23 @@ def loop():
                 _agent.append(new)
 
 
-            case "lst":
+            case "2":
                 print("Listed Habits")
                 for habit in _agent:
                     print(f"{habit.habit} on {habit.date}")
 
-            case "show_streaks":
+            case "3":
                 print("Your streaks")
                 streak=0
                 for habit in _agent:
                     if habit==_agent:
                         streak+=1
-                        print(f"{habit}= {streak} days")
+                        print(f"{habit} = {streak} days")
 
-        print("add_habit | lst | show_streaks | quit")
+        print("1) add_habit "
+              "2) lst "
+              "3) show_streaks "
+              "4) quit ")
         line = input('>> ')  # displays a command-line prompter for users to enter command script
         words = line.split(' ')  # separates the command from the script arguments
         command, args = words[0], words[1:]  # command is one of the interpreter script commands outlined in the help above
