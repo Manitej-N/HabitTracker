@@ -17,15 +17,11 @@ class Habit:
 
     def add_habits(self):
         """Add the habits to the list"""
-        print("Added Habit")
-        habit_name = input("Enter habit name: ")
-        habit_date = input("Enter date (DD-MM-YYYY): ")
-        new = Habit(habit_name, habit_date)
-        _agent.append(new)
+        pass
 
     def list_habits(self):
         """List all habits"""
-
+        pass
 
     def streak(self):
         "Used to track the streaks of a habit"
