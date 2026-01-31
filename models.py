@@ -1,5 +1,7 @@
 # This .py file contains all the classes, methods and funtions required for my HabitTracker
+from datetime import date
 
+streaks = 0
 class Habit:
     """Habit tracker class"""
     def __init__(self, habit, date):
@@ -8,12 +10,12 @@ class Habit:
         self.date = date
         self.list = self.agent = []
 
-    class HabitAgent:
+class HabitAgent(Habit):
         """This is the documentation for HabitAgent.Should Complete the docstring for this class."""
 
-        def __init__(self):  # DO NOT CHANGE
-            self.agent = []
-
+    def __init__(self, habit, date):  # DO NOT CHANGE
+        super().__init__(habit, date)
+        pass self.agent = []
 
     def add_habits(self):
         """Add the habits to the list"""
