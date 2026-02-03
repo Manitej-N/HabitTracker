@@ -33,7 +33,7 @@ class HabitAgent(Habit):
 
 
 habit1 = Habit('reading', '2025-05-05')
-habit2 = Habit('write', '2025-05-06')
+habit2 = Habit('writing', '2025-05-06')
 habit3 = Habit('writing', '2025-05-07')
 habit1.streak()
 habit2.streak()
