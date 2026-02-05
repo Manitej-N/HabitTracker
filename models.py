@@ -8,14 +8,14 @@ class Habit:
         """Initialize the Habit class"""
         self.habit = habit
         self.date = date
-        self.list = self.agent = []
+        self.agent = []
 
 class HabitAgent(Habit):
         """This is the documentation for HabitAgent.Should Complete the docstring for this class."""
 
     def __init__(self, habit, date):  # DO NOT CHANGE
         super().__init__(habit, date)
-        pass self.agent = []
+        self.agent = []
 
     def add_habits(self):
         """Add the habits to the list"""
@@ -35,6 +35,4 @@ class HabitAgent(Habit):
 habit1 = Habit('reading', '2025-05-05')
 habit2 = Habit('writing', '2025-05-06')
 habit3 = Habit('writing', '2025-05-07')
-habit1.streak()
-habit2.streak()
-habit3.streak()
+
