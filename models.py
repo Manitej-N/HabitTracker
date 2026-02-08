@@ -10,25 +10,10 @@ class Habit:
         self.date = date
         self.agent = []
 
-class HabitAgent(Habit):
-        """This is the documentation for HabitAgent.Should Complete the docstring for this class."""
-
-    def __init__(self, habit, date):  # DO NOT CHANGE
-        super().__init__(habit, date)
-        self.agent = []
-
-    def add_habits(self):
-        """Add the habits to the list"""
-        pass
-
-    def list_habits(self):
-        """List all habits"""
-        pass
-
-    def streak(self):
-        "Used to track the streaks of a habit"
-        pass
-
+def streak(habit):
+    """Streak habit from habit"""
+    global streaks
+    streaks += 1
 
 
 
