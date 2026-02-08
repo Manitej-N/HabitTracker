@@ -10,10 +10,6 @@ class Habit:
         self.date = date
         self.agent = []
 
-def streak(habit):
-    """Streak habit from habit"""
-    global streaks
-    streaks += 1
 
 
 
