@@ -9,7 +9,12 @@ class Habit:
         self.habit = habit
         self.date = date
         self.agent = []
-
+    def add_habit(self, habit, date):
+        """Add a habit to the Habit"""
+        self.habit = habit
+        self.date = date
+        self.agent.append(habit, date)
+        print(self.agent)
 
 
 

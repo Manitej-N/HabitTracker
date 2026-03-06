@@ -33,12 +33,11 @@ def loop():
                     print(f"{habit.habit} on {habit.date}")
 
             case "3":
-                print("Your streaks")
                 streak=0
                 for habit in _agent:
                     if habit==_agent:
                         streak+=1
-                        print(f"{habit} = {streak} days")
+                    print(f"{habit} = {streak} days")
 
         print("1) add_habit "
               "2) lst "
